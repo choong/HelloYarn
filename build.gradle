@@ -28,7 +28,15 @@ repositories {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter')
+	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('org.apache.commons:commons-lang3:3.4')
+	compile('org.springframework.boot:spring-boot-starter-tomcat')
+	compile('org.apache.tomcat.embed:tomcat-embed-jasper')
+	compile('org.codehaus.jackson:jackson-mapper-asl:1.9.0')
+	compile('com.googlecode.json-simple:json-simple')	
+	compile('com.google.code.gson:gson')
+	compile('jstl:jstl:1.2')
+	compile('org.apache.tiles:tiles-jsp:3.0.3')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	
 	compile fileTree(dir: 'lib', include: '*.jar')
